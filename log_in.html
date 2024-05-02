@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login_style.css">
+    <meta charset="UTF-8">
+
+
+    <title>Book Corner</title>
+</head>
+
+<body>
+
+
+    <div class="name">
+        <h1>Welcome To Our
+            <p style="margin-top: -5px ; color: #555555"> Book corner</p>
+        </h1>
+    </div>
+
+    <div class="center">
+
+        <form id="form">
+            <h1>Login</h1>
+
+            <div class="txt_field">
+                <label for="UN">User Name</label>
+                <input data-type='user name' id="UN" type="text" placeholder="                user name" class="basicinput">
+                <span style="color: red; margin-left: 80px;"></span>
+
+            </div>
+
+            <div class="txt_field">
+                <label for="Psw">Password</label>
+                <div style="position:absolute ; width: 20px; left: 88%;top: 30%"><img src="eye-close.png" id ="img" style="width: 20px;cursor: pointer;" onclick="showpassword()"></div>
+                <input data-type='password' id="Psw" type="password" placeholder="                password" class="basicinput">
+                <span style="color: red; margin-left: 80px;"></span>
+
+
+            </div> 
+              
+
+            <div class="txt_field" id="hover" style="display: none;"><!-- hover when check box checked-->
+                <label for="Id">ID</label>
+                <input data-type='ID' id="Id" type="text" placeholder="                          id">
+                <span style="color: red; margin-left: 80px;"></span>
+
+            </div> 
+
+            <div class="forg_pass links"> <a href="#">forget password</a></div>
+
+            <button id="login" type="submit"> <a href="userList.html" style="text-decoration: none; color: white;" id="move">login</a> </button>
+
+            <div style="margin-top: 5px;">is admin?<input id="checkbox" type="checkbox" onclick="CheckBox()"></div> 
+
+
+            
+            <div class="links signup"> Don't have an account <br><a href="signup.html">sign up</a> &nbsp; here </div>
+
+
+    </div>
+
+    </form>
+
+
+    </div>
+
+    <script src="login_js.js"></script>
+
+</body>
+
+</html>
